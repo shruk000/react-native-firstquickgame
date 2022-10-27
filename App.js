@@ -1,7 +1,11 @@
 // import { StatusBar } from 'expo-status-bar';
-import { Button,  StatusBar,StyleSheet, Switch, Text, View } from 'react-native';
+import { Button,  StatusBar,StyleSheet, Text, View } from 'react-native';
 import Sc1 from "@Screens/screen1"
 import Sc2 from "@Screens/screen2"
+import Sc3 from "@Screens/screen3"
+
+
+
 import { useRef } from 'react';
 
 export default function App() {
@@ -18,6 +22,8 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <Sc1/>
       <Sc2/>
+      <Sc3/>
+
       <Button title='clickme' onPress={hidebar} />
       <StatusBar translucent={true}  style={styles.titleBar} backgroundColor='red' />
       
