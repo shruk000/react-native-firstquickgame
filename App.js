@@ -14,9 +14,10 @@ export default function App() {
   return (
     <ContextProvider>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name='index1' component={Sc1}/>
+      <Stack.Navigator screenOptions={{title:"Guess a number"}}>
+        <Stack.Screen name='index1' component={Sc1} />
         <Stack.Screen name='index2' component={Sc2}/>
+        <Stack.Screen name='index3' component={Sc3}/>
       </Stack.Navigator>
     </NavigationContainer>
     </ContextProvider>
