@@ -4,42 +4,12 @@ import Sc1 from "@Screens/screen1"
 import Sc2 from "@Screens/screen2"
 import Sc3 from "@Screens/screen3"
 
-
-
-import { useRef } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
-  const value = useRef(false);
-
-
-  const hidebar=()=>{
-    value.current=!value.current
-    StatusBar.setHidden(value.current,"slide");
-  }
-
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Sc1/>
-      <Sc2/>
-      <Sc3/>
-
-      <Button title='clickme' onPress={hidebar} />
-      <StatusBar translucent={true}  style={styles.titleBar} backgroundColor='red' />
+    <NavigationContainer>{
       
-    </View>
+      }</NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  titleBar:{
-
-
-  },
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
